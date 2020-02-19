@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">不折叠输入</string>
+
+    <string name="setting_init_title">不折叠输入使用介绍</string>
+    <string name="step_1">1.激活「不折叠输入」</string>
+    <string name="step_1_tip">系统可同时激活多个输入法</string>
+    <string name="step_2">2.选中「不折叠输入」</string>
+    <string name="step_2_tip">每次使用要先打开APP切换输入法，在输入过程中可随时切换默认输入法</string>
+    <string name="step_3">3.复制文字</string>
+    <string name="step_3_tip">在任意地方复制已经编辑好要发的文案</string>
+    <string name="step_4">4.打开朋友圈发布页面</string>
+    <string name="step_4_tip">点击输入框，在弹起的键盘点击绿色的「开始输入」按钮，则会自动进行不折叠输入</string>
+
+    <string name="to_setting">去设置</string>
+    <string name="had_setting">已设置</string>
+    <string name="to_select">去切换</string>
+    <string name="had_select">已切换</string>
+
+    <string name="current_content">当前剪切板内容：</string>
+    <string name="click_to_input">开始输入</string>
+    <string name="change_input">切换输入法</string>
+</resources>

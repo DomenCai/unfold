@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    android:gravity="center"
+    android:paddingBottom="16dp">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#EFEFEF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/current_content"
+        android:textColor="#9fa9b6"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/layout_content"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_current">
+
+        <TextView
+            android:id="@+id/tv_clip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#748396"
+            android:textSize="15sp"
+            tools:text="ܼ▫️75%酒​۬精​消毒۬液‌ܼ\n▫️59.9三​̣瓶包邮̣!!!\n.\n75%酒​݁精消毒液​💴𝟓𝟗.𝟗/𝟑瓶‌ܼ\n这家‌价格​݁好良​心 现̣在​市ܼ面​100ml都​ܼ得​卖28 这​۬个三瓶​一共̣1500ml" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/btn_input"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape_input_bg"
+        android:gravity="center"
+        android:text="@string/click_to_input"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/btn_change"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_content" />
+
+    <TextView
+        android:id="@+id/btn_change"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_intro_bg"
+        android:gravity="center"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="@string/change_input"
+        android:textColor="#343434"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_input"
+        app:layout_constraintTop_toTopOf="@id/btn_input" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
